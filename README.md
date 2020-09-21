@@ -1,3 +1,7 @@
+<h4 align="center"> 
+	🚧  Finance Api 🚀 Em construção...  🚧
+</h4>
+
 # Finance API
 
 O objetivo é trabalhar a interação de micro-serviços, armazenando, processando e disponibilizando os dados. É considerado trabalhar com as melhores praticas de TI.
@@ -30,6 +34,32 @@ Este serviço seria para integrações de empresas que queiram utilizar destes d
 
 Os dados Pessoais, fazem requisições para a Base A, a fim de obter estas informações. Este vinculo entre os dados, é feito pelo id da pessoa na base A, com isso, este projeto disponibiliza os dados, com o intuido de utilizar o aprendizado de maquina(Machine Learn). Estes dados são disponibilizado de forma que, não seja possível identificar de qual é a pessoa. Todas as requisições exigem a autenticação conforme o projeto Base A.
 
-A cada consulta de empresas, é feita uma requisição para o projeto Base C, que informa qual empresa fez a consulta nos dados fornecidos.
+A cada consulta, é feita uma requisição para o projeto Base C, que informa qual empresa fez a consulta nos dados fornecidos.
 
 ## Projeto Base C
+
+...
+
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Python](https://www.python.org/)
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- [Java](https://www.java.com/pt_BR/)
+- [Sprin Cloud](https://spring.io/)
+- [Postgres](https://www.postgresql.org/)
+- [Docker](https://www.docker.com/) Não implementado
+- [Amazon Lightsail](https://aws.amazon.com/pt/lightsail/)  Não implementado
+
+### Autor
+---
+
+<a href="https://lucas-martins.com">
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/21229387?s=460&u=e254bf0490ba4bac61137f52c8974eb58da33dee&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Lucas Martins</b></sub></a> <a href="https://lucas-martins.com">🚀</a>
+
+
+[![Linkedin Badge](https://img.shields.io/badge/-Lucas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lucas-mcast/)](https://www.linkedin.com/in/lucas-mcast) 
+[![Gmail Badge](https://img.shields.io/badge/-lucas.martins.c03@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lucas.martins.c03@gmail.com)](mailto:lucas.martins.c03@gmail.com)
