@@ -18,16 +18,41 @@ o formato de requisição é json, abaixo segue as estruturas nescessárias:
 
 #### Cadastro
 
-TODO fazer estrutura da requisição de cadastro
+
+* Método: __POST__
+* URL: __http://hostname:5001/api/v1/cadastro__
+
 ```json
   {
-    "teste": "teste"
+  
   }
 ```
 
 #### Informações por CPF
 
+
+* Método: __GET__
+* URL: __http://hostname:5001/api/v1/infocpf/{cpf}__
+
+Retorno:
+```json
+  {
+    
+  }
+```
+
 #### Todas as Informações
+
+
+* Método: __GET__
+* URL: __http://hostname:5001/api/v1/allinfo
+
+Retorno:
+```json
+  {
+    
+  }
+```
 
 ## Ojetivos:
 
