@@ -55,8 +55,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Java](https://www.java.com/pt_BR/)
 - [Sprin Cloud](https://spring.io/)
 - [Postgres](https://www.postgresql.org/)
-- [Docker](https://www.docker.com/) Não implementado
-- [Amazon Lightsail](https://aws.amazon.com/pt/lightsail/)  Não implementado
+- [Docker](https://www.docker.com/) Em fase de implementação
+- [Amazon Lightsail](https://aws.amazon.com/pt/lightsail/)  Em fase de implementação
 
 ### Autor
 ---
