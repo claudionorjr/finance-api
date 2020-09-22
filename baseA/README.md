@@ -73,7 +73,7 @@ Retorno:
 ## Ojetivos:
 
 * [x] - Armazenar no banco de dados através de requisição POST;
-* [ ] - Processar dados financeiros para encaminhar à Base B;
+* [x] - Processar dados financeiros para encaminhar à Base B;
 * [ ] - Registrar micro-serviço no eureka server
 * [x] - Disponibilizar as informações através do cpf;
 * [x] - Proteger acesso as infrmações com algum tipo de autênticação;
