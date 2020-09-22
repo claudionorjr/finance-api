@@ -15,3 +15,6 @@ app.app_context().push()
 @app.shell_context_processor
 def make_shell_context():
     return dict(db=db, Personal=Personal, Income=Income, User=User)
+
+if __name__ == '__main__':
+      app.run(host='0.0.0.0', port=3000)

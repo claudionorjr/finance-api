@@ -25,6 +25,12 @@ def no_content(message):
     response.status_code = 404
     return response
 
+@api.app_errorhandler(405)
+def not_allowed_method(message):
+    response = jsonify({'error': 'not allowed method'})
+    response.status_code = 405
+    return response
+
 @api.errorhandler(ValidationError)
 def validation_error(e):
     return bad_request(e.args[0])

@@ -20,7 +20,7 @@ o formato de requisição é json, abaixo segue as estruturas nescessárias:
 
 
 * Método: __POST__
-* URL: __http://hostname:5001/api/v1/cadastro__
+* Path: __/api/v1/register/finance_personal__
 
 ```json
   {
@@ -32,7 +32,7 @@ o formato de requisição é json, abaixo segue as estruturas nescessárias:
 
 
 * Método: __GET__
-* URL: __http://hostname:5001/api/v1/infocpf/{cpf}__
+* Path: __/cpf/info/{cpf}__
 
 Retorno:
 ```json
@@ -45,7 +45,7 @@ Retorno:
 
 
 * Método: __GET__
-* URL: __http://hostname:5001/api/v1/allinfo
+* Path: __/api/v1/all/info__
 
 Retorno:
 ```json

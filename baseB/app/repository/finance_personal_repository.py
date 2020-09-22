@@ -42,3 +42,8 @@ class FinancePersonalRepository:
         
 
         return all_finances
+
+    # TODO: Implementar a inserção corretamente
+    def save(self, finance_personal):
+        fp = FinancePersonal()
+        return fp.id

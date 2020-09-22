@@ -11,21 +11,51 @@ A descoberta dos micros serviços está disponivel pelo servidor eureka. Cada mi
 ### Modelos de requisições:
 
 o formato de requisição é json, abaixo segue as estruturas nescessárias:
-a
-#### Cadastro
 
-TODO fazer estrutura da requisição de cadastro
+#### Cadastro consultas
+
+* Método: __POST__
+* Path: __/api/v1/register/cpf/query__
+
 ```json
   {
-    "teste": "teste"
+  
   }
 ```
 
+
 #### Informações de consultas realizadas no CPF 
+
+* Método: __GET__
+* Path: __/api/v1/query/cpf/info/<cpf>__
+
+```json
+  {
+  
+  }
+```
 
 #### Informações de compra realizadas no CPF
 
+* Método: __GET__
+* Path: __/api/v1/transaction/cpf/info/<cpf>__
+
+```json
+  {
+  
+  }
+```
+
 #### Movimentações financeiras no CPF
+
+* Método: __GET__
+* Path: __/api/v1/moviment/cpf/info/<cpf>__
+
+```json
+  {
+  
+  }
+```
 
 ## Ojetivos:
 

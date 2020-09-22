@@ -16,21 +16,22 @@ O formato de requisição é JSON, abaixo segue as estruturas nescessárias:
 #### Cadastro
 
 * Método: __POST__
-* URL: __http://hostname:5000/api/v1/cadastro__
+* Path: __/api/v1/personal/register__
 
 ```json
-  {
-    "cpf": "88.888.888-88",
+    {
+    "cpf": "88.888.888-89",
+    "rg" : "5.555.555-8",
+    "dataNascimento": "2020-02-02",
     "nomeCompleto" : "Nome Completo",
     "endereco" : "Rua da Pessoa",
-    "dividas" : [
+    "listaDividas" : [
       {
         "estabelecimento" : "Nome do estabelecimento",
         "data_divida" : "Data do vencimento da divida",
-        "valor" : "valor da dívida: Float",
+        "valor" : "valor da dívida: Float"
       }
     ],
-    "idade" : "idade da pessoa",
     "listaAtivos" : [
       {
         "tipo" : "nome do tipo; exemplo: Apartamento",
@@ -42,31 +43,38 @@ O formato de requisição é JSON, abaixo segue as estruturas nescessárias:
         "tipo" : "tipo da renda",
         "valor" : "valor da renda: Float"
       }
-    ], 
+    ] 
   }
 ```
 #### Consulta por CPF
 
 * Método: __GET__
-* URL: __http://hostname:5000/api/v1/infocpf/{cpf}__
+* URL: __/api/v1/personal/{cpf}__
 
 Retorno:
 ```json
   {
-    "cpf" : "88.888.888-88",
-    "nome" : "Nome da pessoa",
-    "endereco" : "Endereço da Pessoa",
+    "dadosPessoais": {
+        "cpf": "88.888.888-89",
+        "data_nascimento": "2020-02-02",
+        "endereco": "Rua da Pessoa",
+        "nome_completo": "Nome Completo",
+        "rg": "5.555.555-8"
+    },
     "rendas": [
-      "tipo" : "Nome do tipo da renda",
-      "valor" : "Valor da Renda: Float"
-    ]
+        {
+          "tipo": "tipo da renda",
+          "valor": 2500
+        }
+      ],
   }
 ```
 
 ## Ojetivos:
 
-* [ ] - Armazenar no banco de dados através de requisição POST;
+* [x] - Armazenar no banco de dados através de requisição POST;
 * [ ] - Processar dados financeiros para encaminhar à Base B;
+* [ ] - Registrar micro-serviço no eureka server
 * [x] - Disponibilizar as informações através do cpf;
 * [x] - Proteger acesso as infrmações com algum tipo de autênticação;
 * [x] - Criptografar dados do banco de dados. Esta tratativa deve ser feita na aplicação;;
